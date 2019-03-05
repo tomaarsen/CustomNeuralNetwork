@@ -147,6 +147,8 @@ def main():
     # That library helped me grasp how Neural Networks can be implemented.
 
     t = time.time()
+
+    # Edit The following block of values for different results
     filename = "seeds_dataset.csv"
     n_hidden_layers = [5]
     n_outputs = 3
@@ -168,7 +170,7 @@ def main():
 
     # Variables for training and testing scores
     acc_train, acc_test = list(), list()
-    print("\nTraining and cross-validating...")
+    print("Training and cross-validating...")
     for i, idx_test in enumerate(idx_folds):
 
         # Collect training and test data from folds
