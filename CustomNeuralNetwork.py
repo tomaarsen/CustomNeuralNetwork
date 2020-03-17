@@ -195,7 +195,7 @@ def main():
         print(" Fold {}/{}: train acc = {:.2f}%, test acc = {:.2f}% (n_train = {}, n_test = {})".format(i+1, n_folds, acc_train[-1], acc_test[-1], len(X_train), len(X_test)))
 
     print("Learning Rate: {} with {} Epochs after {:.2f}s.".format(l_rate, n_epochs, time.time() - t))
-    print(f"Epochs: {n_epochs}")
+    print("Epochs: {}".format(n_epochs))
     print("Avg train acc = {:.2f}%".format(sum(acc_train)/float(len(acc_train))))
     print("Avg test acc = {:.2f}%".format(sum(acc_test)/float(len(acc_test))))
 
